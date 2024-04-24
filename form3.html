@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF_8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Accounting Platform </title>
+    <link rel="stylesheet" href="./form2.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body class="body">
+    <!--Heder start-->
+    <header>
+        <div id="navbar">
+            <img src="./img/loogoo.png" alt="platform logo">
+            <div class="InputContainer">
+                <input placeholder="Search.." id="input" class="input" name="text" type="text">
+
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Communication">Communication</a></li>
+                    <li><a href="#Register">Register</a></li>
+                    <li><a href="#Login">Login</a></li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+    <div class="div1">
+        facebook:https//;facebook.accounting_platform21.com
+        <br>
+        whhatsapp:010084375842
+        <br>
+        telegram:https//;telegram.acounting_platform//t.me
+        <br>
+        instrgram:https//;instgram.acounting_platform12.com
+       </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 style="text-align: center;" > cost accounting courses </h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+<h3 class="heading"> video gallary </h3>
+<div class="container">
+<div class="main_video">
+    <div class="video">
+        <video src="project graduation part 2/محاسبة التكاليف/كورس_محاسبة_التكاليف___الحلقة_الأولى(0).mp4" controls muted autoplay></video>
+        <h3 class="title">Lec 1</h3>
+    </div>
+</div>
+<div class="video_list">
+    <div class="vid active">
+        <video src="project graduation part 2/محاسبة التكاليف/كورس_محاسبة_التكاليف___الحلقة_الثانية(0).mp4" muted></video>
+        <h3 class="title">Lec 2</h3>
+    </div>
+    <div class="vid">
+<video src="project graduation part 2/محاسبة التكاليف/كورس_محاسبة_التكاليف___الحلقة_الثالثة(0).mp4" muted></video>
+<h3 class="title">Lec 3</h3>
+</div>
+<div class="vid">
+    <video src="project graduation part 2/محاسبة التكاليف/كورس_محاسبة_التكاليف___الحلقة_الرابعة(0).mp4" muted></video>
+    <h3 class="title">Lec 4</h3>
+    </div>
+    <div class="vid">
+        <video src="project graduation part 2/محاسبة التكاليف/كورس_محاسبة_التكاليف___الحلقة_الخامسة(0).mp4" muted></video>
+        <h3 class="title">Lec 5</h3>
+        </div>
+        <div class="vid">
+     <video src="project graduation part 2/محاسبة التكاليف/كورس_محاسبة_التكاليف___الحلقة_السادسة(0).mp4" muted></video>
+    <h3 class="title">Lec 6</h3>
+     </div>
+     <div class="vid">
+       <video src="project graduation part 2/محاسبة التكاليف/كورس_محاسبة_التكاليف___الحلقة_السابعة(0).mp4" muted></video>
+          <h3 class="title"> Lec 7</h3>
+          </div>
+    
+        <div class="vid">
+        <video src="project graduation part 2/محاسبة التكاليف/كورس_محاسبة_التكاليف___الحلقة_الثامنة(0).mp4" muted></video>
+       <h3 class="title">Lec 8</h3>
+     </div>
+     <div class="vid">
+        <video src="project graduation part 2/محاسبة التكاليف/كورس_محاسبة_التكاليف___الحلقة_التاسعة(0).mp4" muted></video>
+       <h3 class="title">Lec 9</h3>
+     </div>
+     <div class="vid">
+        <video src="project graduation part 2/محاسبة التكاليف/كورس_محاسبة_التكاليف_-_الحلقة_العاشرة(0).mp4" muted></video>
+       <h3 class="title">Lec 10</h3>
+     </div>
+    
+</div>
+</div>
+<i id="bx1" class='bx bxl-facebook-square'></i>
+<i id="bx2"class='bx bxl-whatsapp' ></i>
+<i id="bx3" class='bx bxl-telegram' ></i> 
+<i id="bx4" class='bx bxl-instagram' ></i>
+<script>
+    let listVideo = document.querySelectorAll('.video_list .vid');
+    let Mainvideo = document.querySelector('.main_video video');
+    let title = document.querySelector('.main_video .title');
+    listVideo.forEach(video => {
+        video.onclick = () => {
+         listVideo.forEach(vid => vid.classList.remove('active'));
+         video.classList.add('active');
+         if(video.classList.contains('active')){
+            let src = video.children[0].getAttribute('src');
+            Mainvideo.src = src;
+            let text = video.children[1].innerHTML;
+            title.innerHTML = text;
+         };
+        };
+    });
+
+</script>
+    </body>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Registration</title>
+    <link rel="stylesheet" href="./style register.css"> 
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <img src="./img/logo.png" alt="platform logo">
+            <div class="InputContainer">
+                <input placeholder="Search.." id="input" class="input" name="text" type="text">
+
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Register">Register</a></li>
+                    <li><a href="#Login">Login</a></li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <div class="register">
+        <h1>Create Account</h1>
+        <form>
+            <label >Firstname </label>
+            <input type="text">
+            <br>
+            <label>Lastname</label>
+            <input type="text">
+            <br>
+            <label for="gender">Gender: </label>
+            <br> 
+            <br>
+            <div class="radio-group">
+                <label class="radio">
+                    <input type="radio" value="male" name="gender">
+                    male
+                    <span></span>
+                </label>
+                <label class="radio">
+                    <input type="radio" value="female" name="gender">
+                    female
+                    <span></span>
+                </label>
+            </div>
+
+            <br/>  
+            <br>
+            <label>Phone</label>
+            <input type="text">
+            <br>
+            <label>Email</label>
+            <input type="email" placeholder="abcd.123@gmail.com">
+            <br>
+            <label>password</label>
+            <input type="password">
+            <br>
+            <label>Repeat password</label>
+            <input type="password">
+            <br>
+            <input type="submit" value="Register Now">
+        </form>
+    </div>
+</body>
